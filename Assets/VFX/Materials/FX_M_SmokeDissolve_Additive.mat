@@ -17,7 +17,7 @@ Material:
   - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords:
   - _EMISSION
-  m_LightmapFlags: 2
+  m_LightmapFlags: 10
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -153,6 +153,7 @@ Material:
     - _Dissolve: 0
     - _DissolveType: 0
     - _DstBlend: 1
+    - _DstBlendAlpha: 1
     - _Float0: 0
     - _Float2: 0
     - _GlossMapScale: 1
@@ -166,12 +167,15 @@ Material:
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ScreenSpaceReflectionsContributeTransparent: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
     - _Surface: 1
     - _Switch_Alpha: 0
     - _UVSec: 0
+    - _WritesColor: 1
     - _ZTest: 4
     - _ZTestMode: 8
     - _ZWrite: 0
@@ -205,4 +209,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 10
+  version: 11

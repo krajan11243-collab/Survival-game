@@ -1,0 +1,35 @@
+{
+  "name": "com.unity.services.multiplayer",
+  "displayName": "Multiplayer Services",
+  "version": "2.3.2",
+  "unity": "6000.0",
+  "_upm": {
+    "gameService": {},
+    "changelog": "### Added\n\n- Support for Netcode for Entities 7.0.0 or newer, which renamed its `Unity.NetCode` namespaces to `Unity.Netcode`.\n\n### Changed\n\n- Updated the `com.unity.services.wire` dependency from 1.4.4 to 1.5.1, which fixes `Client.SubscribeAsync` hanging indefinitely on a terminal close code or failed websocket handshake, native crashes on PS5 (IL2CPP) from unguarded null dereferences during subscription recovery and the connect handshake, and a crash in server-ping handling when the connection is disconnected concurrently.\n\n### Fixed\n\n- The `Session Connector` object picker field in the `SessionConnectorBehaviour` inspector no longer renders the assigned asset's icon and label with no space between them.\n- The Inspector \"?\" help button on `SessionConnectorBehaviour`, `SessionConnector` and `MultiplayerSession` now opens the package's API documentation instead of a missing Editor manual page."
+  },
+  "description": "The Multiplayer Services package is a one-stop solution for adding multiplayer elements to a game developed in Unity. The Unity Gaming Services (UGS) Multiplayer services powers these capabilities to define how groups of players interact in your games.",
+  "dependencies": {
+    "com.unity.modules.unitywebrequest": "1.0.0",
+    "com.unity.nuget.newtonsoft-json": "3.2.2",
+    "com.unity.services.authentication": "3.7.0",
+    "com.unity.services.core": "1.18.0",
+    "com.unity.services.qos": "1.4.1",
+    "com.unity.services.wire": "1.5.1",
+    "com.unity.transport": "2.7.3",
+    "com.unity.collections": "2.6.7",
+    "com.unity.services.deployment": "1.7.2"
+  },
+  "relatedPackages": {
+    "com.unity.services.multiplayer.tests": "2.3.2"
+  },
+  "upmCi": {
+    "footprint": "266090100ab375bd987d5afd739f93e7ecc619d9"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.services.multiplayer@2.3/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+    "type": "git",
+    "revision": "725e06557277e1e9f2133902c5e310ccb931d8b6"
+  },
+  "_fingerprint": "132669572546473aa34c68350fb7503c18b6040e"
+}

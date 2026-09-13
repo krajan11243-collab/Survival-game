@@ -15,7 +15,7 @@ Material:
   m_InvalidKeywords:
   - ETC1_EXTERNAL_ALPHA
   - _EMISSION
-  m_LightmapFlags: 2
+  m_LightmapFlags: 10
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -99,6 +99,7 @@ Material:
     - _AlphaCutoff: 0.5
     - _BlendColor: 0.22
     - _CenterAmount: 0.307
+    - _Cull: 2
     - _Distortion: 0.6
     - _DistortionAmount: 1.93
     - _DistortionScale: 2.47
@@ -116,9 +117,11 @@ Material:
     - _PushForward: 0
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ScreenSpaceReflectionsContributeTransparent: 1
     - _ShadingAmount: 0
     - _SideAmount: 0.15
     - _Speed: 1
+    - _WritesColor: 1
     - __dirty: 0
     m_Colors:
     - Color_9195cb73a727450cbc963d9e3025d795: {r: 31.999996, g: 15.17508, b: 3.0157065, a: 1}
@@ -151,4 +154,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 10
+  version: 11

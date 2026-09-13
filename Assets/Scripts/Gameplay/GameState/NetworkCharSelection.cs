@@ -105,7 +105,7 @@ namespace Unity.BossRoom.Gameplay.GameState
         /// <summary>
         /// RPC to notify the server that a client has chosen a seat.
         /// </summary>
-        [Rpc(SendTo.Server, RequireOwnership = false)]
+        [Rpc(SendTo.Server)]
         public void ServerChangeSeatRpc(ulong clientId, int seatIdx, bool lockedIn)
         {
             OnClientChangedSeat?.Invoke(clientId, seatIdx, lockedIn);
