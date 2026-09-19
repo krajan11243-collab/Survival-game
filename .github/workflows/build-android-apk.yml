@@ -19,11 +19,19 @@ jobs:
     name: Unity 6 Android APK
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository with Git LFS
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          lfs: true
+          lfs: false
+
+      - name: Recover Unity LFS objects from upstream
+        shell: bash
+        run: |
+          git lfs install --local
+          git remote add upstream https://github.com/Unity-Technologies/com.unity.multiplayer.samples.coop.git
+          git lfs fetch upstream main
+          git lfs checkout
 
       - name: Free disk space
         uses: jlumbroso/free-disk-space@v2.0.0
