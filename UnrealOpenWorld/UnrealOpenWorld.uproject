@@ -1,0 +1,13 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.6",
+  "Category": "Games",
+  "Description": "Mobile-first open-world jungle and village prototype.",
+  "Modules": [
+    {
+      "Name": "UnrealOpenWorld",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}
